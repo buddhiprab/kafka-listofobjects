@@ -22,12 +22,12 @@ class DemoApplicationTests {
 	@Test
 	void contextLoads() {
 		Permission p1 = new Permission();
-		p1.setKey(UUID.randomUUID().toString());
-		p1.setType("Hi Buddhi 2");
+		p1.setName("name 1");
+		p1.setType("Hi 1");
 
 		Permission p2 = new Permission();
-		p2.setKey(UUID.randomUUID().toString());
-		p2.setType("Hi Thisumi 3");
+		p2.setName("name 2");
+		p2.setType("Hi 2");
 
 		List<Permission> list = new ArrayList<>();
 		list.add(p1);
