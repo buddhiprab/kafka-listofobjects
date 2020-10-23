@@ -1,9 +1,7 @@
 package com.example.demo.config;
 
-import com.example.demo.model.Permission;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
@@ -34,7 +32,6 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    @Qualifier("kafkaTemplate")
     public KafkaTemplate<String, ?> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }

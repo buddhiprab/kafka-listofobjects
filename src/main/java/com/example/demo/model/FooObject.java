@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-public class Permission {
+public class FooObject {
     private String type;
     private String name;
 
